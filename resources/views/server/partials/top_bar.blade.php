@@ -3,7 +3,7 @@
         <div class="topbar-left">
             <ul class="nav nav-list nav-list-topbar pull-left">
                 <li>
-                    <b>{{ $server['name'] }}</b>
+                    {{$server['name']}}
                 </li>
                 <li class="@if (!preg_match('[console|players|permissions|configuracoes]', $route)) active @endif">
                     <a href="/server/{{$server['id']}}/"><span class="fa fa-dashboard"></span> Visão Geral</a>

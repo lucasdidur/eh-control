@@ -11,7 +11,7 @@ class JsonController extends Controller
 {
     public function __construct()
     {
-        $this->multicraft = new MulticraftApi(config('credentials.url'), config('credentials.user'), config('credentials.key'));
+        $this->multicraft = new MulticraftApi(config('credentials.local.url'), config('credentials.local.user'), config('credentials.local.key'));
     }
 
     public function getInfo($server_id)

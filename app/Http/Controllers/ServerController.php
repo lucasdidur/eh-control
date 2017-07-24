@@ -13,7 +13,7 @@ class ServerController extends Controller
 {
     public function __construct()
     {
-        $this->multicraft = new MulticraftApi(config('credentials.url'), config('credentials.user'), config('credentials.key'));
+        $this->multicraft = new MulticraftApi(config('credentials.local.url'), config('credentials.local.user'), config('credentials.local.key'));
     }
 
     /**
@@ -25,7 +25,7 @@ class ServerController extends Controller
     {
         $route = Route::getFacadeRoot()->current()->uri();
         return view('server.overview', compact('server', 'route'));
-    }
+}
 
     public function showConfiguration()
     {
