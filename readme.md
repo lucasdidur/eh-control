@@ -26,6 +26,11 @@ Configure o banco de dados e execute os comandos de instalação.
     $ php artisan serve
 
 
+Dados de acesso
+
+    Login: teste@teste.com
+    Senha: teste
+
 ## Informações Legais
 
 Este é um projeto privado, não sendo permitido a sua distribição sem autorização.
